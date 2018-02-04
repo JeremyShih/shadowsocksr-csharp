@@ -517,8 +517,10 @@ namespace Shadowsocks.View
             {
                 _oldSelectedIndex = 0;
             }
+
             if (_oldSelectedIndex < _modifiedConfiguration.configs.Count)
                 ServersListBox.SelectedIndex = _oldSelectedIndex;
+
             LoadConfiguration(_modifiedConfiguration);
             SetServerListSelectedIndex(_oldSelectedIndex);
             LoadSelectedServer();
